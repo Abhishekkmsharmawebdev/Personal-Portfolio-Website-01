@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header section -->
+      <section id="header">
+        <div class="header-top">
+          <div class="logo">
+            <a href="#"><span>❤</span> ᗯEᒪᑕOᗰE</a>
+          </div>
+          <div class="nav-menu">
+            <ul id="sidemenu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#service">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#testimonial">Testimonials</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="bottom-left">
+            <h1 class="name">Abhishek Kumar <span>Sharma</span></h1>
+            <h3 class="profession">-Web Developer</h3>
+            <p class="short-desc">
+              I am proficient in Web
+              Development , UI Design & Digital Marketing.
+            </p>
+            <a href="./images/A_Customised_CurVe_CV__2_ (2).pdf" target="_blank" class="btn-cv" download
+              >Download CV</a
+            >
+          </div>
+          <div class="bottom-right">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </section>
+      <!-- About section -->
+      <section id="about">
+        <div class="about-left">
+          <img src="./images/PBA00882.JPG" alt="user-sideimg" />
+        </div>
+        <div class="about-right">
+          <div class="section-title">
+            <h2 class="sub-title">About Me</h2>
+            <h3 class="title">Web Developer</h3>
+          </div>
+          <p class="desc">
+            
+           I am a dedicated web developer driven by a deep passion for crafting exceptional online experiences. With a keen eye for design aesthetics and a strong command of cutting-edge technologies, I bring creativity and functionality to the forefront of every project. Whether it's building responsive websites, optimizing user interfaces, or solving complex problems, I thrive on turning ideas into tangible digital solutions. My commitment to staying up-to-date with industry trends ensures that I deliver modern, efficient, and user-centric websites. Let's collaborate to bring your digital vision to life.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="openTab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+            <p class="tab-links" onclick="openTab('education')">Education</p>
+            <p class="tab-links" onclick="openTab('certificate')">Certification Courses</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>
+                <span>UI/UX Design</span><br />Designing Web/App interfaces
+              </li>
+              <li><span>Web Development</span><br />Web app development</li>
+              <li><span>Digital Marketing</span><br />Building business</li>
+              <li><span>Andriod Developer</span><br />Mobile Application</li>
+              <li><span>MERN</span><br />Full Stack Development with React & Node JS </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>
+                <span>2023 - Completed</span><br />
+                Training Cum Intership on Andriod
+              </li>
+              <li>
+                <span>2023 - Current</span><br />
+                Campus Ambassador for
+                Rendezvous'23-'24, IIT Delhi
+              </li>
+              <li>
+                <span>2023 - Current</span><br />
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <span>2020 - Present <b> B.Tech</b></span><br />Buddha Institute Of Technology, Gorakhpur
+              </li>
+              <li>
+                <span>2018-2020 <b>Intermediate</b></span><br />Vimal I C Manas Vihar Padari Bazar, Gorakhpur
+              </li>
+              <li>
+                <span>2014-2016 <b> Higher School</b> </span><br />
+               
+                P.G Senior Secondary School, Captainganj
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="certificate">
+            <ul>
+              <li>
+                <span>GeeksforGeeks</span><br />
+                Full Stack Development with React & Node JS
+              </li>
+              <li>
+                <span>Udemy</span><br />
+                HTML,JavaScript & Bootstrap
+              </li>
+              <li>
+                <span>GUVI</span><br /> Python
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Service section -->
+      <section id="service">
+        <div class="section-title">
+          <h2 class="sub-title">My Services</h2>
+          <h3 class="title">A brief of Offerting Services</h3>
+        </div>
+        <div class="services">
+          <div>
+            <i class="fa-brands fa-battle-net"></i>
+            <h2>Branding</h2>
+            <p>
+           
+               My portfolio embodies my distinct brand—merging creativity and technical excellence. It's a showcase of web development services that prioritize user-centric design and top-notch functionality
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-globe"></i>
+            <h2>Print Design</h2>
+            <p>
+            
+            In my portfolio, discover my print design expertise. I offer a range of services that blend creativity and precision to make your printed materials stand out.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-laptop"></i>
+            <h2>Wordpress</h2>
+            <p>
+             
+              Explore my portfolio for WordPress expertise. I provide comprehensive services, ensuring your website leverages the power of WordPress for an exceptional online presence.
+            </p>
+          </div>
+          <div>
+            <i class="fa-brands fa-pix"></i>
+            <h2>Graphic Design</h2>
+            <p>
+              Within my portfolio, discover my graphic design prowess. I offer a spectrum of services, crafting visually captivating solutions that elevate branding and communication across various mediums.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-lock"></i>
+            <h2>Cyber Security</h2>
+            <p>
+              My portfolio showcases my cybersecurity expertise. I offer comprehensive services to safeguard your digital assets, providing peace of mind in an increasingly connected world.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              Explore my portfolio for web development mastery. I offer a range of services, creating responsive, user-friendly websites that cater to your unique needs and goals.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio section -->
+      <section id="portfolio">
+        <div class="section-title">
+          <h2 class="sub-title">My Portfolio</h2>
+          <h3 class="title">Awesome Works</h3>
+          <div class="project-list">
+            <div class="project">
+              <img src="./images/Screenshot 2023-09-30 184206.png" alt="project1" />
+              <div class="layer">
+                <h3>Personal Portfolio </h3>
+                <p>
+                  My front-end portfolio, crafted with HTML, CSS, and JavaScript, showcases visually appealing designs and interactive web experiences. Explore projects that demonstrate my expertise in creating user-friendly interfaces.
+                </p>
+                <a href="#"
+                  ><i class="fa fa-external-link" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project">
+              <img src="./images/Screenshot 2023-09-30 184614.png" alt="project2" />
+              <div class="layer">
+                <h3>Build A Weather App</h3>
+                <p>
+                  The weather front-end page offers a visually pleasing and user-friendly interface, utilizing HTML, CSS, and JavaScript. It provides real-time weather data, forecasts, and interactive features for a seamless user experience.
+                </p>
+                <a href="#"
+                  ><i class="fa fa-external-link" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project">
+              <img src="./images/Screenshot 2023-09-30 185138.png" alt="project3" />
+              <div class="layer">
+                <h3>Build a Netflix Landing Page</h3>
+                <p>
+              The Netflix landing page is a captivating end-to-end web experience, designed with HTML, CSS, and JavaScript. It mirrors the original Netflix site, featuring dynamic UI elements and content for users to explore.
+                </p>
+                <a href="#"
+                  ><i class="fa fa-external-link" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonial section -->
+      <section id="testimonial">
+        <div class="section-title">
+          <h2 class="sub-title">Testimonial</h2>
+          <h3 class="title">People What Are Saying</h3>
+          <div class="testimonial-list">
+            <div class="review">
+              <i class="fa-solid fa-quote-left"></i>
+              <p class="review-text">
+                Portfolio is an impressive showcase of technical skill and creativity. Their diverse range of projects, stunning design, and exceptional user experience demonstrate their expertise. It's clear that they prioritize client satisfaction and deliver outstanding results. Highly recommended for anyone seeking a top-notch web developer.
+              </p>
+              <div class="review-by">
+                <div class="img">
+                  <img
+                    src="./images/Abhishek.jpg"
+                    alt="testimonials-img-1"
+                  />
+                </div>
+                <div class="info">
+                  <h3 class="name">Abhishek Km Sharma</h3>
+                  <h5 class="resignation"> MEAN Stack and Web Developer </h5>
+                </div>
+              </div>
+            </div>
+            <div class="review">
+              <i class="fa-solid fa-quote-left"></i>
+              <p class="review-text">
+                Web Developer portfolio is a stunning display of talent. Their design finesse and technical proficiency shine through diverse projects. User experience is top-notch, and they excel in communication. A go-to choice for exceptional web development solutions.
+              </p>
+              <div class="review-by">
+                <div class="img">
+                  <img
+                    src="./images/profile-pic.png"
+                    alt="testimonials-img-2"
+                  />
+                </div>
+                <div class="info">
+                  <h3 class="name">Shailesh Sahani</h3>
+                  <h5 class="resignation">MERN and Web Developer</h5>
+                </div>
+              </div>
+            </div>
+            <div class="review">
+              <i class="fa-solid fa-quote-left"></i>
+              <p class="review-text">
+                Portfolio is a testament to their exceptional skills. Their projects exhibit impressive design, technical competence, and a strong focus on user experience. Their diverse work demonstrates versatility, making them a top choice for web development needs. Highly recommended for quality and creativity in web development.
+              </p>
+              <div class="review-by">
+                <div class="img">
+                  <img
+                    src="./images/profile-pic (5).png"
+                    alt="testimonials-img-3"
+                  />
+                </div>
+                <div class="info">
+                  <h3 class="name">Rajesh Sahani</h3>
+                  <h5 class="resignation">DSA and Full Stack Developer</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact section -->
+      <section id="contact">
+        <div class="section-title">
+          <h2 class="sub-title">Contact</h2>
+          <h3 class="title">Get in Touch</h3>
+        </div>
+        <div class="content">
+          <div class="contact-left">
+            <form action="">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit">
+                Send Message <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </form>
+          </div>
+          <div class="vl"></div>
+          <div class="contact-right">
+            <div class="col address">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="info">
+                <h2 class="title">Address</h2>
+                <p> Gorakhpur<p>
+              </div>
+            </div>
+            <div class="col phone">
+              <i class="fa-solid fa-phone"></i>
+              <div class="info">
+                <h2 class="title">Phone</h2>
+                <p>
+                +91 8542964812
+                </p>
+              </div>
+            </div>
+            <div class="col email">
+              <i class="fa-solid fa-envelope"></i>
+              <div class="info">
+                <h2 class="title">Email</h2>
+                <p>abhishekkmgkp@gmail.com</p>
+              </div>
+            </div>
+            <div class="col website">
+              <i class="fa-solid fa-globe"></i>
+              <div class="info">
+                <h2 class="title">Website</h2>
+                <p>www.Webdevabhishek.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            Copyright ©️ Portfolio | Made by Abhishek Kumar Sharma
+            <i class="fa-solid fa-heart"></i> by
+            <a href="#">abhishekwebdev</a>
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
